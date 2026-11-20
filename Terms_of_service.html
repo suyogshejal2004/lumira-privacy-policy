@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Terms of Service — Lumira</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#0d1512;
+    --panel:#12211c;
+    --panel-2:#16281f;
+    --line: rgba(224,232,222,0.10);
+    --line-strong: rgba(224,232,222,0.18);
+    --text:#eef2ec;
+    --text-dim:#a9b8ab;
+    --sage:#8fbf9f;
+    --sage-dim: rgba(143,191,159,0.14);
+    --amber:#e0a458;
+    --amber-dim: rgba(224,164,88,0.14);
+    --radius: 18px;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html{background:var(--ink); scroll-behavior:smooth;}
+  body{
+    font-family:'Inter',-apple-system,BlinkMacSystemFont,sans-serif;
+    background:
+      radial-gradient(ellipse 900px 500px at 50% -10%, rgba(143,191,159,0.10), transparent 60%),
+      var(--ink);
+    color:var(--text);
+    min-height:100vh;
+    padding: 64px 24px 60px;
+    display:flex;
+    justify-content:center;
+  }
+  .wrap{ max-width:820px; width:100%; }
+
+  .mark{ display:flex; align-items:center; gap:14px; margin-bottom:36px; }
+  .mark svg{ display:block; }
+  .mark-word{ font-family:'Fraunces', serif; font-size:19px; font-weight:500; color:var(--text); }
+  .mark-word span{ color:var(--sage); }
+
+  header{ margin-bottom:40px; }
+  .eyebrow{
+    font-size:12px; letter-spacing:0.14em; text-transform:uppercase;
+    color:var(--sage); font-weight:600; margin-bottom:16px;
+  }
+  h1{
+    font-family:'Fraunces', serif; font-weight:500; font-size:42px;
+    line-height:1.1; letter-spacing:-0.01em; color:var(--text); max-width:16ch;
+  }
+  .lede{ margin-top:18px; color:var(--text-dim); font-size:16px; line-height:1.75; max-width:62ch; }
+  .meta{
+    margin-top:22px; display:flex; gap:22px; flex-wrap:wrap;
+    font-size:12.5px; color:#7c8b7d;
+  }
+  .meta strong{ color:var(--text-dim); }
+
+  .layout{ display:flex; gap:36px; align-items:flex-start; }
+  nav.toc{
+    flex:none; width:210px; position:sticky; top:40px;
+    border-left:1px solid var(--line-strong);
+    padding-left:18px;
+  }
+  nav.toc div{ font-size:11px; text-transform:uppercase; letter-spacing:0.1em; color:#6d7a6e; margin-bottom:12px; font-weight:600; }
+  nav.toc a{
+    display:block; font-size:13.5px; color:var(--text-dim); text-decoration:none;
+    padding:6px 0; line-height:1.4; transition:color .15s ease;
+  }
+  nav.toc a:hover{ color:var(--sage); }
+
+  main{ flex:1; min-width:0; }
+
+  .card{
+    background: linear-gradient(180deg, var(--panel), var(--panel-2));
+    border:1px solid var(--line-strong);
+    border-radius: var(--radius);
+    padding: 36px 32px;
+    margin-bottom: 24px;
+  }
+  .card h2{
+    font-family:'Fraunces', serif; font-weight:500; font-size:22px;
+    color:var(--text); margin-bottom:14px;
+  }
+  .card p{
+    color:var(--text-dim); font-size:14.5px; line-height:1.75;
+    margin-bottom:12px;
+  }
+  .card p:last-child{ margin-bottom:0; }
+  .card ul{
+    list-style:none; padding:0; margin:14px 0 0;
+    display:flex; flex-direction:column; gap:12px;
+  }
+  .card li{
+    color:var(--text-dim); font-size:14px; line-height:1.65;
+    padding-left:22px; position:relative;
+  }
+  .card li::before{
+    content:""; position:absolute; left:4px; top:9px;
+    width:6px; height:6px; border-radius:50%; background:var(--sage);
+  }
+  .card li strong{ color:var(--text); font-weight:600; }
+
+  .callout{
+    margin-top:16px; padding:16px 20px;
+    background:var(--sage-dim); border:1px solid rgba(143,191,159,0.25);
+    border-radius:12px; display:flex; align-items:center; gap:14px;
+    font-size:14px; color:var(--text);
+  }
+  .callout a{ color:var(--sage); text-decoration:underline; font-weight:500; }
+
+  footer{
+    margin-top:60px; padding-top:28px; border-top:1px solid var(--line);
+    text-align:center; font-size:12.5px; color:#6d7a6e;
+  }
+
+  @media(max-width:768px){
+    body{ padding:40px 16px; }
+    .layout{ flex-direction:column; }
+    nav.toc{ display:none; }
+    .card{ padding:28px 20px; }
+    h1{ font-size:32px; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="mark">
+    <svg width="32" height="32" viewBox="0 0 108 108" fill="none">
+      <circle cx="54" cy="54" r="50" fill="#16281f" stroke="#8fbf9f" stroke-width="4"/>
+      <path d="M54,28 C42,28 32,36 32,48 C32,52 34,56 36,58 C34,62 34,66 36,70 C38,74 42,76 46,76 L50,76 C50,78 52,80 54,80 C56,80 58,78 58,76 L62,76 C66,76 70,74 72,70 C74,66 74,62 72,58 C74,56 76,52 76,48 C76,36 66,28 54,28 Z" fill="#8fbf9f"/>
+    </svg>
+    <div class="mark-word">Lumira <span>Terms</span></div>
+  </div>
+
+  <header>
+    <div class="eyebrow">Legal & Compliance</div>
+    <h1>Terms of Service</h1>
+    <p class="lede">
+      These terms govern your use of the Lumira mobile application. By using Lumira, you agree to these terms.
+    </p>
+    <div class="meta">
+      <div>Effective date: <strong>November 20, 2026</strong></div>
+      <div>App version: <strong>1.1.5+</strong></div>
+      <div>Package: <strong>com.lumira.ai</strong></div>
+    </div>
+  </header>
+
+  <div class="layout">
+    <nav class="toc">
+      <div>Contents</div>
+      <a href="#acceptance">1. Acceptance of Terms</a>
+      <a href="#service">2. Description of Service</a>
+      <a href="#wellness">3. Digital Wellness Disclaimer</a>
+      <a href="#subscriptions">4. Subscriptions & Billing</a>
+      <a href="#privacy">5. Privacy & Data Use</a>
+      <a href="#acceptable-use">6. Acceptable Use</a>
+      <a href="#intellectual-property">7. Intellectual Property</a>
+      <a href="#termination">8. Account Termination</a>
+      <a href="#contact">9. Contact & Support</a>
+    </nav>
+
+    <main>
+      <section id="acceptance" class="card">
+        <h2>1. Acceptance of Terms</h2>
+        <p>
+          By downloading, installing, accessing, or using the Lumira mobile application, you agree to be bound by these Terms of Service. If you do not agree to these terms, do not install or use the application.
+        </p>
+        <p>
+          You must be at least 13 years of age (or 16 in the European Economic Area / UK) to use Lumira. The application is not directed at or designed for children under these ages.
+        </p>
+      </section>
+
+      <section id="service" class="card">
+        <h2>2. Description of Service</h2>
+        <p>
+          Lumira provides an intelligent mobile habit companion designed to help you become mindful of compulsive short-form video consumption. Key features include:
+        </p>
+        <ul>
+          <li><strong>Real-Time Scroll Detection:</strong> Local accessibility inspection to monitor active short-form video feeds.</li>
+          <li><strong>Attention Strain Modeling:</strong> Calculating a dynamic cognitive brain health score based on your usage frequency.</li>
+          <li><strong>Focus Sessions & Blocker:</strong> Timed intervals with customizable app blocking to help you do deep work.</li>
+          <li><strong>Squad Peer Accountability:</strong> Group challenges, shared daily scroll summaries, and real-time encouragement.</li>
+        </ul>
+      </section>
+
+      <section id="wellness" class="card">
+        <h2>3. Digital Wellness & Non-Medical Disclaimer</h2>
+        <p>
+          Lumira is a habit-building and productivity tool. <strong>Lumira is NOT a medical device, therapeutic instrument, or medical diagnosis tool.</strong>
+        </p>
+        <p>
+          The Brain State visualization (Healthy, Stressed, Cracked, Overwhelmed) and coaching nudges are psychological metaphors for self-reflection and habit awareness. They do not constitute clinical, psychiatric, or psychological medical advice.
+        </p>
+      </section>
+
+      <section id="subscriptions" class="card">
+        <h2>4. Subscriptions, Payments & Cancellations</h2>
+        <p>
+          While core features of Lumira are free to use, Lumira may offer optional premium features via auto-renewing subscriptions and in-app purchases processed through Google Play.
+        </p>
+        <ul>
+          <li><strong>Billing:</strong> Payment is charged to your Google Play account upon confirmation of purchase.</li>
+          <li><strong>Auto-Renewal:</strong> Subscriptions automatically renew unless cancelled at least 24 hours prior to the end of the current billing cycle.</li>
+          <li><strong>Management & Cancellation:</strong> You can manage, pause, or cancel your subscription at any time directly through your Google Play Store account settings (Google Play > Subscriptions).</li>
+          <li><strong>Refunds:</strong> Refund requests are handled in accordance with the official Google Play refund policies.</li>
+        </ul>
+      </section>
+
+      <section id="privacy" class="card">
+        <h2>5. Privacy & Data Handling</h2>
+        <p>
+          Your personal data and privacy are paramount. All screen inspection and swipe tracking run strictly on your local device. We never capture, read, or upload your private messages, chats, camera photos, or passwords.
+        </p>
+        <p>
+          For full details on data handling, third-party services, and storage, please review our <a href="https://suyogshejal2004.github.io/lumira-privacy-policy/Privacy_policy.html" style="color:var(--sage); text-decoration:underline;">Privacy Policy</a>.
+        </p>
+      </section>
+
+      <section id="acceptable-use" class="card">
+        <h2>6. Acceptable Use Policy</h2>
+        <p>When using Lumira, you agree NOT to:</p>
+        <ul>
+          <li>Attempt to decompile, reverse engineer, or tamper with the application's underlying code or scoring algorithms.</li>
+          <li>Use the application to surveil, harass, or track another individual without their explicit consent.</li>
+          <li>Manipulate system clocks or falsify proof images in Squad challenges and leaderboards.</li>
+          <li>Transmit malicious code, automated bots, or spam through the Squad messaging system.</li>
+        </ul>
+      </section>
+
+      <section id="intellectual-property" class="card">
+        <h2>7. Intellectual Property</h2>
+        <p>
+          All graphics, logos, source code, UI designs, and brand elements related to Lumira are the exclusive property of Lumira. You are granted a personal, non-transferable, revocable license to use the app for personal, non-commercial purposes.
+        </p>
+      </section>
+
+      <section id="termination" class="card">
+        <h2>8. Account Termination & Data Deletion</h2>
+        <p>
+          You may stop using Lumira and delete your account and associated data at any time directly inside the app via <strong>Settings > Privacy > Delete Account</strong>, or through our web deletion portal at <a href="https://suyogshejal2004.github.io/lumira-privacy-policy/delete-account.html" style="color:var(--sage); text-decoration:underline;">Account Deletion</a>.
+        </p>
+        <p>
+          We reserve the right to suspend or terminate accounts that breach these terms or engage in abusive behavior on the platform.
+        </p>
+      </section>
+
+      <section id="contact" class="card">
+        <h2>9. Contact & Support</h2>
+        <p>If you have questions, feedback, or concerns regarding these Terms of Service, please contact our support team:</p>
+        <div class="callout">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#8fbf9f" stroke-width="1.8">
+            <path d="M4 4h16v16H4z" opacity="0"/>
+            <path d="M3 6l9 7 9-7"/>
+            <path d="M3 6h18v12H3z"/>
+          </svg>
+          <div>Email: <a href="mailto:aquaalert.app@gmail.com">aquaalert.app@gmail.com</a></div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <footer>
+    <span>© 2026 Lumira. All rights reserved.</span>
+  </footer>
+
+</div>
+</body>
+</html>
